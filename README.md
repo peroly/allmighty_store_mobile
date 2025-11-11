@@ -58,3 +58,30 @@ hot reload: fitur flutter yang memungkinkan developer untuk melihat perubahan ko
 Sedangkan hot restart adalah
 
 hot restart: fitur flutter yang memungkinkan developer untuk melihat perubahan kode, namun state aplikasi dimulai dari awal.
+
+## Tugas 8
+1.  Jelaskan perbedaan antara Navigator.push() dan Navigator.pushReplacement() pada Flutter. Dalam kasus apa sebaiknya masing-masing digunakan pada aplikasi Football Shop kamu?
+- Navigator.push() menumpuk halaman yang baru di atas halaman kita, sehingga bisa back ke halaman yang ditumpuk tersebbut.
+    Dalam projek ini, digunakan pada tombol di halaman utama, agar ketika menekan tombol back, akan kembali ke halaman utama.
+
+- Navigator.pushReplacement() mengganti halaman kita sekarang dengan halaman baru, sehingga tidak bisa back ke halaman yang diganti tersebut.
+    Dalam projek ini, digunakan pada tombol di left_drawer, agar ketika menekan tombol back, tidak muncul bagian left drawernya.
+
+2. Bagaimana kamu memanfaatkan hierarchy widget seperti Scaffold, AppBar, dan Drawer untuk membangun struktur halaman yang konsisten di seluruh aplikasi?
+
+- Untuk membangun struktur halaman yang konsisten, saya menggunakaan drawer yang sama untuk setiap kemunculan Scaffold, yaitu LeftDrawer, agar struktur drawer konsisten di setiap tampilannya. Untuk appbar di scaffold, saya hanya menyamakan warnanya saja.
+
+3.  Dalam konteks desain antarmuka, apa kelebihan menggunakan layout widget seperti Padding, SingleChildScrollView, dan ListView saat menampilkan elemen-elemen form? Berikan contoh penggunaannya dari aplikasi kamu.
+
+- Padding: untuk memberi jarak di sekitar widget anaknya, sehingga elemen2 form tidak terlalu dekat.
+Contoh: setiap input di form saya, semuanya memiliki jarak (padding). 
+
+-SingleChildScrollView : untuk membuat seluruh isi halaman bisa di-scroll saat isinya sangat panjang, sehingga kita bisa memiliki elemen form yang ba   nyak tanpa khawatir tidak cukup space.
+Contoh : Dalam menampilkan elemen2 form di form add product.
+
+-Listview : mirip SingleChildScrollView.
+Contoh: Dalam menampilkan elemen2 di leftdrawer pada proyek ini.
+
+4.  Bagaimana kamu menyesuaikan warna tema agar aplikasi Football Shop memiliki identitas visual yang konsisten dengan brand toko?
+
+Saya memilih warna tema yang mirip dengan proyek allmighty store saya di website.
