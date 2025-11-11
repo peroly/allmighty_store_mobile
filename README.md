@@ -84,4 +84,4 @@ Contoh: Dalam menampilkan elemen2 di leftdrawer pada proyek ini.
 
 4.  Bagaimana kamu menyesuaikan warna tema agar aplikasi Football Shop memiliki identitas visual yang konsisten dengan brand toko?
 
-Saya memilih warna tema yang mirip dengan proyek allmighty store saya di website.
+Saya memilih warna tema yang mirip dengan proyek allmighty store saya di website, lalu menerapkannya di setiap halaman agar konsisten.
