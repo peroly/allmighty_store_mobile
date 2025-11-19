@@ -1,3 +1,4 @@
+import 'package:allmighty_store/product_entry_list.dart';
 import 'package:flutter/material.dart';
 import 'package:allmighty_store/menu.dart';
 import 'package:allmighty_store/productslist.dart';
@@ -37,7 +38,7 @@ class LeftDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.home_outlined),
+            leading: const Icon(Icons.home_filled),
             title: const Text('Home'),
             // Bagian redirection ke MyHomePage
             onTap: () {
@@ -48,9 +49,9 @@ class LeftDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.post_add),
+            leading: const Icon(Icons.add),
             title: const Text('Add Product'),
-            // Bagian redirection ke NewsFormPage
+            // Bagian redirection ke ProductFormPage
             onTap: () {
               Navigator.pushReplacement(
                 context,
@@ -58,6 +59,17 @@ class LeftDrawer extends StatelessWidget {
               );
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.all_inclusive),
+            title: const Text('Product List'),
+            onTap: () {
+                // Route to Product list page
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProductEntryListPage()),
+                );
+            },
+        ),
         ],
       ),
     );
